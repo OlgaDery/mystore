@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ca.sait</groupId>
+        <artifactId>mystore</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mystore-ear</artifactId>
+    <packaging>ear</packaging>
+
+    <name>sample-ear</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>ca.sait</groupId>
+            <artifactId>mystore-web</artifactId>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>ca.sait</groupId>
+            <artifactId>mystore-ejb</artifactId>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>ca.sait</groupId>
+            <artifactId>mystore-common</artifactId>
+            <type>jar</type>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <version>7</version>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
