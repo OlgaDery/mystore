@@ -16,25 +16,25 @@
 <table>
   <tr>
     <td>First Name:</td>
-        <td><input type="text" id="firstName" name="firstName" value=" " /></td>
+        <td><input type="text" id="firstName" name="firstName" value="" /></td>
   </tr>
     <tr>
         <td>Last Name:</td>
-        <td><input type="text" name="lastName" value=" " required /></td>
+        <td><input type="text" name="lastName" value="" required /></td>
     </tr>
     
     <tr>
         <td>Email:</td>
-        <td><input type="text" name="email" value=" "  required /></td>
+        <td><input type="text" name="email" value=""  required /></td>
     </tr>
     
     <tr>
         <td>UserName:</td>
-        <td><input type="text" name="userName" value=" " required /></td>
+        <td><input type="text" name="userName" value="" required /></td>
     </tr>
     <tr>
         <td>Password:</td>
-        <td><input type="password" name="password" value=" " required /></td>
+        <td><input type="password" name="password" value="" required /></td>
     </tr>
     
     <tr>
@@ -48,7 +48,7 @@
 
  <H3>Enter consumer email: </H3>
 <form method="get" action="<%= request.getContextPath() %>/customer">
-<input type="text" name="cust_email" value=" "   />
+<input type="text" name="cust_email" value=""   />
  <input type="submit" name = "action" value="get_by_email" />
   </form>
   

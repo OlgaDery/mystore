@@ -161,8 +161,15 @@ public class ControllerServlet extends HttpServlet {
 				try {
 					
 				final Customer[] customers = co.getAllCustomers();
+				if (customers.length > 0) 
+				{
+					request.setAttribute("success", "we are done");
+				} else 
+				{
+					request.setAttribute("success", "sorry, there are no customers");
+				}
 				request.setAttribute("customers", customers);
-				request.setAttribute("success", "we are done");
+				
 				} catch (Exception e) {
 					logger.error(e.getMessage(), e);
 					request.setAttribute("success", "we failed");
