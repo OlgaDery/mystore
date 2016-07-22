@@ -1,5 +1,5 @@
 # mystore
-Example of a small web application using Maven, Apache Derby database, JPA, Servlet, EJB and JMS APIs.
+Example of a small web application using Maven, Apache Derby database, JPA, Servlet, EJB and JMS APIs. It allows user to add a new customer to the database, to select a list of all customers, to search for a certain customer by email.
 
 ## Requirements:
 - Eclipse Mars with Java SE 8;
